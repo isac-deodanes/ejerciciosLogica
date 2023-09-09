@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/stylo/cajero.css">
+    <title>Cajero restaunrante</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="enunciado">10. El cajero de un restaurante desea controlar el flujo de caja en un
+            dia de trabajo cualquiera. Antes de abrir al publico, el gerente del
+            establecimiento le entrega la base para el dia, la cual consiste en una
+            suma de dinero que debe registrar en la caja y con la cual se espera
+            pueda desempeñarse sin contratiempos. Durante su jornada tendra
+            ingresos por concepto de las ventas que se realicen, tambien habran
+            salidas de caja para la compra de insumos o gastos eventuales que
+            deban realizarse.
+            Se espera un algoritmo, que reciba el registro de cada una de
+            las operaciones a medida que vayan sucediendo. El cajero tambien
+            requiere un informe del saldo en caja despues de cada registro. El
+            algoritmo debera dar un mensaje de alerta en el caso que el saldo sea
+            inferior o igual al 15 % de la base asignada. Al cierre del restaurante,
+            se requiere los saldos finales (saldo en caja, ingresos y egresos) y la
+            cantidad de cada una de las operaciones realizadas.
+        </div>
+
+        <div class="main">
+            <div class="nav1">
+                <label for="">INGRESO</label><br>
+                <input type="number" class="inputIngreso"><br>
+                <button class="btnIng">ingreso</button><br>
+
+            </div>
+            <div class="nav1">
+                <label for="">EGRESO</label><br>
+                <input type="number" class="inputEgreso"><br>
+                <button class="btnEgresos">egresos</button><br>
+
+            </div>
+
+            
+        </div>
+        <button class="result">Ver resultado</button>
+        <p class="text1"></p>
+        <p class="text4"></p>
+        <p class="text5"></p>
+
+        <div class="main2">
+            <div class="article">
+                <div class="listCaja">
+                    <p class="title">Tipo de transsaccion</p>
+                    <p class="textTranssaccionI"></p>
+                    <p class="textTranssaccionE"></p>
+                    
+                </div>
+                <div class="listCaja">
+                    <p class="title">Monto</p>
+                    <p class="textMontoI"></p>
+                    <p class="textMontoE"></p>
+
+                </div>
+                <div class="listCaja">
+                    <p class="title">Saldo en caja</p>
+                    <p class="textSaldoCajaI"></p>
+                    <p class="textSaldoCajaE"></p>
+
+                    
+                </div>
+                
+            </div>
+            
+            <div class="cuadroTotal">
+                <p class="total">Total</p>
+                
+                <div class="cajatotal">
+                    <p class="titletotal">ingreso</p>
+                    <p class="contadorIngreso"></p>
+                </div>
+                
+                <div class="cajatotal">
+                    <p class="titletotal">egreso</p>
+                    <p class="contadorEgreso"></p>
+                </div>
+                
+                <div class="cajatotal">
+                    <p class="titletotal">suma de los monto de ingresos</p>
+                    <p class="textSumaI"></p>
+                </div>
+                
+                <div class="cajatotal">
+                    <p class="titletotal">suma de los monto de egresos</p>
+                    <p class="textSumaE"></p>
+                </div>
+                
+                <div class="cajatotal">
+                    <p class="titletotal">Saldo total en caja</p>
+                    <p class="text6"></p>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./src/js/cajero.js"></script>
+
+</html>

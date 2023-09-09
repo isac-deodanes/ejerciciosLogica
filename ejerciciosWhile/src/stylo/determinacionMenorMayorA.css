@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    color: aliceblue;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #03090e;
+    width: 50%;
+    padding: 3rem;
+    box-shadow: 0px 14px 15px 10px #5f5f68;
+    border-radius: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+    width: 6rem;
+    background-color: transparent;
+    border: 1px solid #8b58e4;
+    color: aliceblue;
+
+}
+
+button:focus,
+button:focus,
+button:focus,
+button[type]:focus {
+    background-color: #401554;
+    border: 2px solid #8b58e4;
+
+}
+
+.main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #8b58e4;
+    width: 60%;
+    text-align: center;
+    padding: 6px;
+    border-radius: 9px;
+    color: whitesmoke;
+
+}
+
+input:focus,
+input:focus,
+input[type]:focus {
+    box-shadow: 0px 0px 6px 1px #8b58e4;
+    border: 2px solid #8b58e4;
+}
+
+p {
+    color: white;
+    font-size: initial;
+    font-weight: 600;
+    font-style: inherit;
+}
+
+.descripcion {
+    font-size: 13px;
+    text-align: center;
+
+}
+.cantidadEdad{
+    border: 1px solid #8b58e4;
+    height: 16rem;
+    width: 14rem;
+    text-align: center;
+    /* overflow: ; */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* background-color: transparent; */
+}
+.cantidadEdad::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+.cantidadEdad::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+.cantidadEdad::-webkit-scrollbar-thumb:hover {
+    background: #484ac4;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.cantidadEdad::-webkit-scrollbar-thumb:active {
+    background-color: #358db9;
+}
+
+.ver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
